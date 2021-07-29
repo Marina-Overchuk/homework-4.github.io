@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/background.png);
+}
+.wrapper {
+    background-color: white;
+    width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;  
+}
+.logo {
+    margin-left: 30px;
+    padding-top: 5px;
+    float: left;     
+}
+.contacts {    
+    margin-right: 30px;
+    width: 60%;
+    margin-left: 780px;
+    margin-block-start: -4px;
+    padding-top: 5px;
+    font-size: 13px;            
+}
+.our-contacts {
+    color: #36a4c8;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.contacts a {
+    text-decoration: none; 
+    color: #36a4c8;
+}
+.contacts li {
+    list-style-type: none;
+}
+.countries{
+    padding-left: 250px;
+    display: flex;
+    margin-right: 30px;
+    padding-top: 10px; 
+}
+.about-country {  
+    margin-right: 15px;
+    text-align: center;  
+} 
+.about-country a {
+    font-size: 10px;
+    color: #36a4c8;
+}
+.nav {
+    display: flex;
+    background-color: #303030;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.nav li {
+    list-style-type: none; 
+}
+.nav li a:after {    
+    content: ' ▾';
+} 
+.nav li a:hover:after {
+    content: ' ▾';
+}   
+.nav li a:only-child:after {
+    content: '';
+} 
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    margin: 0;
+    background-color: #303030;
+}
+ul.submenu > li {
+    display: block;
+    height: 20px;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 0px;
+    color: white;
+    background-color: #303030;      
+} 
+ul.nav > li:hover > ul.submenu {   
+    display: block;
+    z-index: 1;
+}
+.container {    
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 0px;
+    width: 1000px;     
+}
+.information {
+    width: 250px;
+    background:#edeef0;
+    padding-left: 5px;
+    padding-right: 0px;
+    text-align: center;
+    min-height: 100%;
+}
+.news {
+    width: 250px;
+    background:#edeef0;
+    text-align: center;
+    min-height: 100%;
+}
+.information :after, .no-content :after, .news:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+}
+.footer {    
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+
